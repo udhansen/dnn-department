@@ -1,0 +1,5 @@
+Run_Order
+node type,  first,  avg_ms,  %,  cdf%,  mem KB,  times called,  name
+Copy (NC X32),  0,  1.03367e-05,  0.134428%,  0.134428%,  0,  1,  Delegate/Copy (NC\t X32):0
+Fully Connected (NC F32) GEMM,  0.01,  0.00766445,  99.6761%,  99.8106%,  0,  1,  Delegate/Fully Connected (NC\t F32) GEMM:1
+Fully Connected (NC F32) GEMM,  0,  1.45665e-05,  0.189437%,  100%,  0,  1,  Delegate/Fully Connected (NC\t F32) GEMM:2

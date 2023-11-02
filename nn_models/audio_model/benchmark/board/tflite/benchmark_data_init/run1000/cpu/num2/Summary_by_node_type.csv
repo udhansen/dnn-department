@@ -1,0 +1,3 @@
+Summary_by_node_type
+node type,  count,  avg_ms,  avg %,  cdf %,  mem KB,  times called
+AllocateTensors,  1,  0.161,  100%,  100%,  0,  1

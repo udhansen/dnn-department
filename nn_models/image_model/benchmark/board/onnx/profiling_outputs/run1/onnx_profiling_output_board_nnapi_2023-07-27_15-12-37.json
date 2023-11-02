@@ -1,0 +1,14 @@
+[
+{"cat" : "Session","pid" :2414,"tid" :2414,"dur" :2579,"ts" :8,"ph" : "X","name" :"model_loading_uri","args" : {}},
+{"cat" : "Session","pid" :2414,"tid" :2414,"dur" :18203,"ts" :2642,"ph" : "X","name" :"session_initialization","args" : {}},
+{"cat" : "Node","pid" :2414,"tid" :2414,"dur" :3,"ts" :21547,"ph" : "X","name" :"NnapiExecutionProvider_NNAPI_0_0_fence_before","args" : {"op_name" : "NNAPI_0"}},
+{"cat" : "Node","pid" :2414,"tid" :2414,"dur" :18233,"ts" :21560,"ph" : "X","name" :"NnapiExecutionProvider_NNAPI_0_0_kernel_time","args" : {"thread_scheduling_stats" : "","activation_size" : "3136","parameter_size" : "407096","graph_index" : "8","output_size" : "40","provider" : "NnapiExecutionProvider","exec_plan_index" : "8","op_name" : "NNAPI_0"}},
+{"cat" : "Node","pid" :2414,"tid" :2414,"dur" :1,"ts" :39819,"ph" : "X","name" :"NnapiExecutionProvider_NNAPI_0_0_fence_after","args" : {"op_name" : "NNAPI_0"}},
+{"cat" : "Session","pid" :2414,"tid" :2414,"dur" :18312,"ts" :21527,"ph" : "X","name" :"SequentialExecutor::Execute","args" : {}},
+{"cat" : "Session","pid" :2414,"tid" :2414,"dur" :18361,"ts" :21499,"ph" : "X","name" :"model_run","args" : {}},
+{"cat" : "Node","pid" :2414,"tid" :2414,"dur" :2,"ts" :39941,"ph" : "X","name" :"NnapiExecutionProvider_NNAPI_0_0_fence_before","args" : {"op_name" : "NNAPI_0"}},
+{"cat" : "Node","pid" :2414,"tid" :2414,"dur" :1630,"ts" :39947,"ph" : "X","name" :"NnapiExecutionProvider_NNAPI_0_0_kernel_time","args" : {"thread_scheduling_stats" : "","activation_size" : "3136","parameter_size" : "407096","graph_index" : "8","output_size" : "40","provider" : "NnapiExecutionProvider","exec_plan_index" : "8","op_name" : "NNAPI_0"}},
+{"cat" : "Node","pid" :2414,"tid" :2414,"dur" :1,"ts" :41629,"ph" : "X","name" :"NnapiExecutionProvider_NNAPI_0_0_fence_after","args" : {"op_name" : "NNAPI_0"}},
+{"cat" : "Session","pid" :2414,"tid" :2414,"dur" :1713,"ts" :39925,"ph" : "X","name" :"SequentialExecutor::Execute","args" : {}},
+{"cat" : "Session","pid" :2414,"tid" :2414,"dur" :1757,"ts" :39899,"ph" : "X","name" :"model_run","args" : {}}
+]

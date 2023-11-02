@@ -1,0 +1,59 @@
+NNAPI
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e nnapi -p ./onnx_profiling_output_board_nnapi_x1_y1 -x 1 -y 1
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e nnapi -p ./onnx_profiling_output_board_nnapi_x1_y2 -x 1 -y 2
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e nnapi -p ./onnx_profiling_output_board_nnapi_x1_y4 -x 1 -y 4
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e nnapi -p ./onnx_profiling_output_board_nnapi_x2_y1 -x 2 -y 1
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e nnapi -p ./onnx_profiling_output_board_nnapi_x2_y2 -x 2 -y 2
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e nnapi -p ./onnx_profiling_output_board_nnapi_x2_y4 -x 2 -y 4
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e nnapi -p ./onnx_profiling_output_board_nnapi_x4_y1 -x 4 -y 1
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e nnapi -p ./onnx_profiling_output_board_nnapi_x4_y2 -x 4 -y 2
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e nnapi -p ./onnx_profiling_output_board_nnapi_x4_y4 -x 4 -y 4
+
+CPU
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e cpu -p ./onnx_profiling_output_board_cpu_x1_y1 -x 1 -y 1
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e cpu -p ./onnx_profiling_output_board_cpu_x1_y2 -x 1 -y 2
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e cpu -p ./onnx_profiling_output_board_cpu_x1_y4 -x 1 -y 4
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e cpu -p ./onnx_profiling_output_board_cpu_x2_y1 -x 2 -y 1
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e cpu -p ./onnx_profiling_output_board_cpu_x2_y2 -x 2 -y 2
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e cpu -p ./onnx_profiling_output_board_cpu_x2_y4 -x 2 -y 4
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e cpu -p ./onnx_profiling_output_board_cpu_x4_y1 -x 4 -y 1
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e cpu -p ./onnx_profiling_output_board_cpu_x4_y2 -x 4 -y 2
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e cpu -p ./onnx_profiling_output_board_cpu_x4_y4 -x 4 -y 4
+
+vsi_npu
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e vsi_npu -p ./onnx_profiling_output_board_vsi_npu_x1_y1 -x 1 -y 1
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e vsi_npu -p ./onnx_profiling_output_board_vsi_npu_x1_y2 -x 1 -y 2
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e vsi_npu -p ./onnx_profiling_output_board_vsi_npu_x1_y4 -x 1 -y 4
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e vsi_npu -p ./onnx_profiling_output_board_vsi_npu_x2_y1 -x 2 -y 1
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e vsi_npu -p ./onnx_profiling_output_board_vsi_npu_x2_y2 -x 2 -y 2
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e vsi_npu -p ./onnx_profiling_output_board_vsi_npu_x2_y4 -x 2 -y 4
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e vsi_npu -p ./onnx_profiling_output_board_vsi_npu_x4_y1 -x 4 -y 1
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e vsi_npu -p ./onnx_profiling_output_board_vsi_npu_x4_y2 -x 4 -y 2
+
+/usr/bin/onnxruntime-1.8.2/onnxruntime_perf_test ./model.onnx -r 1000 -e vsi_npu -p ./onnx_profiling_output_board_vsi_npu_x4_y4 -x 4 -y 4

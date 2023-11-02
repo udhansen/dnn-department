@@ -1,0 +1,3 @@
+Run_Order
+node type,  start,  first,  avg_ms,  %,  cdf%,  mem KB,  times called,  name
+TfLiteXNNPackDelegate,  0.00457407,  0.096,  0.0802192,  100%,  100%,  0,  1,  [StatefulPartitionedCall:0]:3

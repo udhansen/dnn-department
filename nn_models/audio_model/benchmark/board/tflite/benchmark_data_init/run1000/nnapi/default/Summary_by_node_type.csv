@@ -1,0 +1,4 @@
+Summary_by_node_type
+node type,  count,  avg_ms,  avg %,  cdf %,  mem KB,  times called
+ModifyGraphWithDelegate,  1,  0.65,  85.639%,  85.639%,  0,  2
+AllocateTensors,  1,  0.109,  14.361%,  100%,  0,  3

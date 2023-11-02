@@ -1,0 +1,41 @@
+Profiling Info for Benchmark Initialization:
+============================== Run Order ==============================
+node type, start, first, avg_ms, %, cdf%, mem KB, times called, name
+ModifyGraphWithDelegate, 0.314, 0.589, 0.311, 84.2818%, 84.2818%, 0, 2, ModifyGraphWithDelegate/0
+AllocateTensors, 0.597, 0.106, 0.0386667, 15.7182%, 100%, 0, 3, AllocateTensors/0
+
+============================== Top by Computation Time ==============================
+node type, start, first, avg_ms, %, cdf%, mem KB, times called, name
+ModifyGraphWithDelegate, 0.314, 0.589, 0.311, 84.2818%, 84.2818%, 0, 2, ModifyGraphWithDelegate/0
+AllocateTensors, 0.597, 0.106, 0.0386667, 15.7182%, 100%, 0, 3, AllocateTensors/0
+
+Number of nodes executed: 2
+============================== Summary by node type ==============================
+node type, count, avg_ms, avg %, cdf %, mem KB, times called
+ModifyGraphWithDelegate, 1, 0.622, 84.2818%, 84.2818%, 0, 2
+AllocateTensors, 1, 0.116, 15.7182%, 100%, 0, 3
+
+Timings (microseconds): count=1 curr=738
+Memory (bytes): count=0
+2 nodes observed
+
+
+Operator-wise Profiling Info for Regular Benchmark Runs:
+============================== Run Order ==============================
+node type, start, first, avg_ms, %, cdf%, mem KB, times called, name
+TfLiteNnapiDelegate, 0.00699232, 0.358, 0.348927, 100%, 100%, 0, 1, [StatefulPartitionedCall:0]:3
+
+============================== Top by Computation Time ==============================
+node type, start, first, avg_ms, %, cdf%, mem KB, times called, name
+TfLiteNnapiDelegate, 0.00699232, 0.358, 0.348927, 100%, 100%, 0, 1, [StatefulPartitionedCall:0]:3
+
+Number of nodes executed: 1
+============================== Summary by node type ==============================
+node type, count, avg_ms, avg %, cdf %, mem KB, times called
+TfLiteNnapiDelegate, 1, 0.348, 100%, 100%, 0, 1
+
+Timings (microseconds): count=2605 first=358 curr=349 min=339 max=407 avg=348.927 std=6
+Memory (bytes): count=0
+1 nodes observed
+
+

@@ -1,0 +1,4 @@
+Summary_by_node_type
+node type,  count,  avg_ms,  avg %,  cdf %,  mem KB,  times called
+FULLY_CONNECTED,  2,  0.139,  99.2857%,  99.2857%,  0,  2
+RESHAPE,  1,  0.001,  0.714286%,  100%,  0,  1

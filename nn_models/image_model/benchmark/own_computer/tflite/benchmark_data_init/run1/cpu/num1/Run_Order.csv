@@ -1,0 +1,4 @@
+Run_Order
+node type,  first,  avg_ms,  %,  cdf%,  mem KB,  times called,  name
+ModifyGraphWithDelegate,  0.444,  0.444,  97.3684%,  97.3684%,  1308,  1,  ModifyGraphWithDelegate/0
+AllocateTensors,  0.012,  0.012,  2.63158%,  100%,  0,  1,  AllocateTensors/0

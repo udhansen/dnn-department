@@ -1,0 +1,9 @@
+CPU
+
+/home/udhansen/nn_models/linux_x86-64_benchmark_model --graph=./keyword_detector_model.tflite --profiling_output_csv_file=/home/udhansen/nn_models/audio_model/benchmark/own_computer/tflite/profiling_outputs/run1000/tflite_profiling_output_own_computer_cpu.csv --enable_op_profiling=true --num_runs=1000
+
+/home/udhansen/nn_models/linux_x86-64_benchmark_model --graph=./keyword_detector_model.tflite --profiling_output_csv_file=/home/udhansen/nn_models/audio_model/benchmark/own_computer/tflite/profiling_outputs/run1000/tflite_profiling_output_own_computer_cpu_num_1.csv --enable_op_profiling=true --num_threads=1 --num_runs=1000
+
+/home/udhansen/nn_models/linux_x86-64_benchmark_model --graph=./keyword_detector_model.tflite --profiling_output_csv_file=/home/udhansen/nn_models/audio_model/benchmark/own_computer/tflite/profiling_outputs/run1000/tflite_profiling_output_own_computer_cpu_num_2.csv --enable_op_profiling=true --num_threads=2 --num_runs=1000
+
+/home/udhansen/nn_models/linux_x86-64_benchmark_model --graph=./keyword_detector_model.tflite --profiling_output_csv_file=/home/udhansen/nn_models/audio_model/benchmark/own_computer/tflite/profiling_outputs/run1000/tflite_profiling_output_own_computer_cpu_num_4.csv --enable_op_profiling=true --num_threads=4 --num_runs=1000

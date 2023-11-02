@@ -1,0 +1,4 @@
+Top_by_Computation_Time
+node type,  start,  first,  avg_ms,  %,  cdf%,  mem KB,  times called,  name
+ModifyGraphWithDelegate,  0.403,  0.759,  0.393,  84.5161%,  84.5161%,  0,  2,  ModifyGraphWithDelegate/0
+AllocateTensors,  0.759,  0.131,  0.048,  15.4839%,  100%,  0,  3,  AllocateTensors/0

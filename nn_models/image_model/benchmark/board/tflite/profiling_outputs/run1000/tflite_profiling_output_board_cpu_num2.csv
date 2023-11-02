@@ -1,0 +1,43 @@
+Profiling Info for Benchmark Initialization:
+============================== Run Order ==============================
+node type, start, first, avg_ms, %, cdf%, mem KB, times called, name
+AllocateTensors, 0, 0.065, 0.065, 100%, 100%, 0, 1, AllocateTensors/0
+
+============================== Top by Computation Time ==============================
+node type, start, first, avg_ms, %, cdf%, mem KB, times called, name
+AllocateTensors, 0, 0.065, 0.065, 100%, 100%, 0, 1, AllocateTensors/0
+
+Number of nodes executed: 1
+============================== Summary by node type ==============================
+node type, count, avg_ms, avg %, cdf %, mem KB, times called
+AllocateTensors, 1, 0.065, 100%, 100%, 0, 1
+
+Timings (microseconds): count=1 curr=65
+Memory (bytes): count=0
+1 nodes observed
+
+
+Operator-wise Profiling Info for Regular Benchmark Runs:
+============================== Run Order ==============================
+node type, start, first, avg_ms, %, cdf%, mem KB, times called, name
+RESHAPE, 0.00464116, 0.003, 0.00160784, 1.11269%, 1.11269%, 0, 1, [sequential/flatten/Reshape]:0
+FULLY_CONNECTED, 0.00645606, 0.18, 0.139407, 96.476%, 97.5887%, 0, 1, [sequential/dense/MatMul;sequential/dense/Relu;sequential/dense/BiasAdd]:1
+FULLY_CONNECTED, 0.146098, 0.005, 0.00348425, 2.41126%, 100%, 0, 1, [StatefulPartitionedCall:0]:2
+
+============================== Top by Computation Time ==============================
+node type, start, first, avg_ms, %, cdf%, mem KB, times called, name
+FULLY_CONNECTED, 0.00645606, 0.18, 0.139407, 96.476%, 96.4761%, 0, 1, [sequential/dense/MatMul;sequential/dense/Relu;sequential/dense/BiasAdd]:1
+FULLY_CONNECTED, 0.146098, 0.005, 0.00348425, 2.41126%, 98.8873%, 0, 1, [StatefulPartitionedCall:0]:2
+RESHAPE, 0.00464116, 0.003, 0.00160784, 1.11269%, 100%, 0, 1, [sequential/flatten/Reshape]:0
+
+Number of nodes executed: 3
+============================== Summary by node type ==============================
+node type, count, avg_ms, avg %, cdf %, mem KB, times called
+FULLY_CONNECTED, 2, 0.142, 99.3007%, 99.3007%, 0, 2
+RESHAPE, 1, 0.001, 0.699301%, 100%, 0, 1
+
+Timings (microseconds): count=5462 first=188 curr=141 min=135 max=299 avg=144.499 std=12
+Memory (bytes): count=0
+3 nodes observed
+
+

@@ -1,0 +1,20 @@
+Run_Order
+node type,  start,  first,  avg_ms,  %,  cdf%,  mem KB,  times called,  name
+RESHAPE,  0.008186,  0.03,  0.030649,  0.177244%,  0.177244%,  0,  1,  [stft/frame/Reshape]:0
+GATHER,  0.039128,  0.739,  0.705985,  4.08272%,  4.25997%,  0,  1,  [stft/frame/GatherV2;stft/frame/GatherV2/axis]:1
+RESHAPE,  0.745549,  0.027,  0.023461,  0.135675%,  4.39564%,  0,  1,  [stft/frame/Reshape_3]:2
+MUL,  0.769278,  0.07,  0.070767,  0.409247%,  4.80489%,  0,  1,  [stft/mul]:3
+PAD,  0.840391,  0.064,  0.06274,  0.362826%,  5.16772%,  0,  1,  [stft/rfft/Pad]:4
+RESHAPE,  0.903491,  0.02,  0.019772,  0.114342%,  5.28206%,  0,  1,  [stft/rfft3]:5
+RFFT2D,  0.923707,  2.119,  2.14703,  12.4163%,  17.6983%,  0,  1,  [stft/rfft4]:6
+RESHAPE,  3.07145,  0.019,  0.020575,  0.118986%,  17.8173%,  0,  1,  [stft/rfft5]:7
+COMPLEX_ABS,  3.09252,  0.731,  0.742489,  4.29383%,  22.1112%,  0,  1,  [Abs]:8
+RESHAPE,  3.8356,  0.01,  0.010502,  0.0607332%,  22.1719%,  0,  1,  [ExpandDims1]:9
+RESIZE_BILINEAR,  3.84647,  0.161,  0.163543,  0.945772%,  23.1177%,  0,  1,  [sequential_1/resizing_1/resize/ResizeBilinear]:10
+CONV_2D,  4.01048,  0.307,  0.313012,  1.81015%,  24.9278%,  0,  1,  [sequential_1/conv2d_2/Relu;sequential_1/conv2d_2/BiasAdd;sequential_1/conv2d_2/Conv2D;sequential_1/conv2d_2/BiasAdd/ReadVariableOp2]:11
+CONV_2D,  4.3241,  7.282,  7.25297,  41.944%,  66.8718%,  0,  1,  [sequential_1/conv2d_3/Relu;sequential_1/conv2d_3/BiasAdd;sequential_1/conv2d_3/Conv2D;sequential_1/conv2d_3/BiasAdd/ReadVariableOp]:12
+MAX_POOL_2D,  11.5787,  0.275,  0.280119,  1.61993%,  68.4918%,  0,  1,  [sequential_1/max_pooling2d_1/MaxPool]:13
+RESHAPE,  11.8595,  0.011,  0.010775,  0.062312%,  68.5541%,  0,  1,  [sequential_1/flatten_1/Reshape]:14
+FULLY_CONNECTED,  11.8707,  5.466,  5.40499,  31.2572%,  99.8113%,  0,  1,  [sequential_1/dense_2/MatMul;sequential_1/dense_2/Relu;sequential_1/dense_2/BiasAdd]:15
+FULLY_CONNECTED,  17.2771,  0.014,  0.012297,  0.0711138%,  99.8824%,  0,  1,  [StatefulPartitionedCall:2]:16
+ARG_MAX,  17.2898,  0.004,  0.003662,  0.0211774%,  99.9036%,  0,  1,  [StatefulPartitionedCall:0]:17

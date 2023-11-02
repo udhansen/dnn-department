@@ -1,0 +1,4 @@
+Summary_by_node_type
+node type,  count,  avg_ms,  avg %,  cdf %,  mem KB,  times called
+Fully Connected (NC F32) GEMM,  2,  0.005,  100%,  100%,  0,  2
+Copy (NC X32),  1,  0,  0%,  100%,  0,  1

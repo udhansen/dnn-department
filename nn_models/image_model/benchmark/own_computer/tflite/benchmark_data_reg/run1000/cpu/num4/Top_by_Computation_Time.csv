@@ -1,0 +1,5 @@
+Top_by_Computation_Time
+node type,  first,  avg_ms,  %,  cdf%,  mem KB,  times called,  name
+Fully Connected (NC F32) GEMM,  1.633,  0.00910758,  99.7689%,  99.7689%,  0,  1,  Delegate/Fully Connected (NC\t F32) GEMM:1
+Fully Connected (NC F32) GEMM,  0.002,  1.35762e-05,  0.148721%,  99.9176%,  0,  1,  Delegate/Fully Connected (NC\t F32) GEMM:2
+Copy (NC X32),  0.001,  7.52017e-06,  0.0823797%,  100%,  0,  1,  Delegate/Copy (NC\t X32):0

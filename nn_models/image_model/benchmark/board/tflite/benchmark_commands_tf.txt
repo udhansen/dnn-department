@@ -1,0 +1,61 @@
+
+CPU
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_default.csv --enable_op_profiling=true --use_xnnpack=false --num_runs=1000
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_default_num1.csv --enable_op_profiling=true --use_xnnpack=false --num_threads=1 --num_runs=1000
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_default_num2.csv --enable_op_profiling=true --use_xnnpack=false --num_threads=2 --num_runs=1000
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_default_num4.csv --enable_op_profiling=true --use_xnnpack=false --num_threads=4 --num_runs=1000
+
+XNNPACK
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_xnnpack.csv --enable_op_profiling=true --use_xnnpack=true --num_runs=1000
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_xnnpack_num1.csv --enable_op_profiling=true --use_xnnpack=true --num_threads=1 --num_runs=1000
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_xnnpack_num2.csv --enable_op_profiling=true --use_xnnpack=true --num_threads=2 --num_runs=1000
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_xnnpack_num4.csv --enable_op_profiling=true --use_xnnpack=true --num_threads=4 --num_runs=1000
+
+NNAPI
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_nnapi.csv --enable_op_profiling=true --use_nnapi=true --num_runs=1000
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_nnapi_num1.csv --enable_op_profiling=true --use_nnapi=true --num_threads=1 --num_runs=1000
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_nnapi_num2.csv --enable_op_profiling=true --use_nnapi=true --num_threads=2 --num_runs=1000
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_nnapi_num4.csv --enable_op_profiling=true --use_nnapi=true --num_threads=4 --num_runs=1000
+
+VX
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_vx.csv --enable_op_profiling=true --external_delegate_path=/usr/lib/libvx_delegate.so --num_runs=1000
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_vx_num1.csv --enable_op_profiling=true --external_delegate_path=/usr/lib/libvx_delegate.so --num_threads=1 --num_runs=1000
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_vx_num2.csv --enable_op_profiling=true --external_delegate_path=/usr/lib/libvx_delegate.so --num_threads=2 --num_runs=1000
+
+/usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_vx_num4.csv --enable_op_profiling=true --external_delegate_path=/usr/lib/libvx_delegate.so --num_threads=4 --num_runs=1000
+
+GPU
+
+USE_GPU_INFERENCE=1 /usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_gpu.csv --enable_op_profiling=true --external_delegate_path=/usr/lib/libvx_delegate.so --num_runs=1000
+
+USE_GPU_INFERENCE=1 /usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_gpu_num1.csv --enable_op_profiling=true --external_delegate_path=/usr/lib/libvx_delegate.so --num_threads=1 --num_runs=1000
+
+USE_GPU_INFERENCE=1 /usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_gpu_num2.csv --enable_op_profiling=true --external_delegate_path=/usr/lib/libvx_delegate.so --num_threads=2 --num_runs=1000
+
+USE_GPU_INFERENCE=1 /usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_gpu_num4.csv --enable_op_profiling=true --external_delegate_path=/usr/lib/libvx_delegate.so --num_threads=4 --num_runs=1000
+
+NPU
+
+USE_GPU_INFERENCE=0 /usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_npu.csv --enable_op_profiling=true --external_delegate_path=/usr/lib/libvx_delegate.so --num_runs=1000
+
+USE_GPU_INFERENCE=0 /usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_npu_num1.csv --enable_op_profiling=true --external_delegate_path=/usr/lib/libvx_delegate.so --num_threads=1 --num_runs=1000
+
+USE_GPU_INFERENCE=0 /usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_npu_num2.csv --enable_op_profiling=true --external_delegate_path=/usr/lib/libvx_delegate.so --num_threads=2 --num_runs=1000
+
+USE_GPU_INFERENCE=0 /usr/bin/tensorflow-lite-2.6.0/examples/benchmark_model --graph=./clothing_classifier_model.tflite --profiling_output_csv_file=./tflite_profiling_output_board_npu_num4.csv --enable_op_profiling=true --external_delegate_path=/usr/lib/libvx_delegate.so --num_threads=4 --num_runs=1000
+

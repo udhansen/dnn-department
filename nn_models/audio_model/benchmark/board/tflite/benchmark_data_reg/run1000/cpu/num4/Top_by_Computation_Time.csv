@@ -1,0 +1,11 @@
+Top_by_Computation_Time
+node type,  start,  first,  avg_ms,  %,  cdf%,  mem KB,  times called,  name
+FULLY_CONNECTED,  6.94862,  2.254,  2.23641,  24.3325%,  24.3325%,  0,  1,  [sequential_1/dense_2/MatMul;sequential_1/dense_2/Relu;sequential_1/dense_2/BiasAdd]:15
+CONV_2D,  4.48104,  2.192,  2.17408,  23.6543%,  47.9867%,  0,  1,  [sequential_1/conv2d_3/Relu;sequential_1/conv2d_3/BiasAdd;sequential_1/conv2d_3/Conv2D;sequential_1/conv2d_3/BiasAdd/ReadVariableOp]:12
+RFFT2D,  0.924804,  2.145,  2.12891,  23.1628%,  71.1495%,  0,  1,  [stft/rfft4]:6
+COMPLEX_ABS,  3.07672,  0.735,  0.74015,  8.05292%,  79.2024%,  0,  1,  [Abs]:8
+GATHER,  0.043669,  0.694,  0.701436,  7.63171%,  86.8342%,  0,  1,  [stft/frame/GatherV2;stft/frame/GatherV2/axis]:1
+CONV_2D,  3.99176,  0.519,  0.488142,  5.31105%,  92.1452%,  0,  1,  [sequential_1/conv2d_2/Relu;sequential_1/conv2d_2/BiasAdd;sequential_1/conv2d_2/Conv2D;sequential_1/conv2d_2/BiasAdd/ReadVariableOp2]:11
+MAX_POOL_2D,  6.65665,  0.275,  0.280427,  3.05108%,  95.1963%,  0,  1,  [sequential_1/max_pooling2d_1/MaxPool]:13
+RESIZE_BILINEAR,  3.82825,  0.161,  0.162968,  1.77311%,  96.9694%,  0,  1,  [sequential_1/resizing_1/resize/ResizeBilinear]:10
+MUL,  0.770295,  0.07,  0.070923,  0.771651%,  97.741%,  0,  1,  [stft/mul]:3

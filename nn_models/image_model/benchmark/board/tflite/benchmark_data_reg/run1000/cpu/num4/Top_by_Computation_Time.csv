@@ -1,0 +1,5 @@
+Top_by_Computation_Time
+node type,  start,  first,  avg_ms,  %,  cdf%,  mem KB,  times called,  name
+FULLY_CONNECTED,  0.00678482,  0.18,  0.141414,  96.2867%,  96.2867%,  0,  1,  [sequential/dense/MatMul;sequential/dense/Relu;sequential/dense/BiasAdd]:1
+FULLY_CONNECTED,  0.148454,  0.005,  0.00345422,  2.35194%,  98.6386%,  0,  1,  [StatefulPartitionedCall:0]:2
+RESHAPE,  0.00460339,  0.003,  0.00199944,  1.36139%,  100%,  0,  1,  [sequential/flatten/Reshape]:0

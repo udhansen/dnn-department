@@ -1,0 +1,46 @@
+Profiling Info for Benchmark Initialization:
+============================== Run Order ==============================
+node type, first, avg_ms, %, cdf%, mem KB, times called, name
+ModifyGraphWithDelegate, 0.444, 0.444, 97.3684%, 97.3684%, 1308, 1, ModifyGraphWithDelegate/0
+AllocateTensors, 0.012, 0.012, 2.63158%, 100%, 0, 1, AllocateTensors/0
+
+============================== Top by Computation Time ==============================
+node type, first, avg_ms, %, cdf%, mem KB, times called, name
+ModifyGraphWithDelegate, 0.444, 0.444, 97.3684%, 97.3684%, 1308, 1, ModifyGraphWithDelegate/0
+AllocateTensors, 0.012, 0.012, 2.63158%, 100%, 0, 1, AllocateTensors/0
+
+Number of nodes executed: 2
+============================== Summary by node type ==============================
+node type, count, avg_ms, avg %, cdf %, mem KB, times called
+ModifyGraphWithDelegate, 1, 0.444, 97.3684%, 97.3684%, 1308, 1
+AllocateTensors, 1, 0.012, 2.63158%, 100%, 0, 1
+
+Timings (microseconds): count=1 curr=456
+Memory (bytes): count=0
+2 nodes observed
+
+
+Operator-wise Profiling Info for Regular Benchmark Runs:
+============================== Run Order ==============================
+node type, first, avg_ms, %, cdf%, mem KB, times called, name
+Copy (NC, X32), 0, 1.03367e-05, 0.134428%, 0.134428%, 0, 1, Delegate/Copy (NC	 X32):0
+Fully Connected (NC, F32) GEMM, 0.01, 0.00766445, 99.6761%, 99.8106%, 0, 1, Delegate/Fully Connected (NC	 F32) GEMM:1
+Fully Connected (NC, F32) GEMM, 0, 1.45665e-05, 0.189437%, 100%, 0, 1, Delegate/Fully Connected (NC	 F32) GEMM:2
+
+============================== Top by Computation Time ==============================
+node type, first, avg_ms, %, cdf%, mem KB, times called, name
+Fully Connected (NC, F32) GEMM, 0.01, 0.00766445, 99.6761%, 99.6761%, 0, 1, Delegate/Fully Connected (NC	 F32) GEMM:1
+Fully Connected (NC, F32) GEMM, 0, 1.45665e-05, 0.189437%, 99.8656%, 0, 1, Delegate/Fully Connected (NC	 F32) GEMM:2
+Copy (NC, X32), 0, 1.03367e-05, 0.134428%, 100%, 0, 1, Delegate/Copy (NC	 X32):0
+
+Number of nodes executed: 3
+============================== Summary by node type ==============================
+node type, count, avg_ms, avg %, cdf %, mem KB, times called
+Fully Connected (NC, F32) GEMM, 2, 0.007, 100%, 100%, 0, 2
+Copy (NC, X32), 1, 0, 0%, 100%, 0, 1
+
+Timings (microseconds): count=75653 first=10 curr=7 min=7 max=698 avg=7.68936 std=7
+Memory (bytes): count=0
+3 nodes observed
+
+

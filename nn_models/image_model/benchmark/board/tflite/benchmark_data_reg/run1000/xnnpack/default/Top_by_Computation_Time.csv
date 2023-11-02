@@ -1,0 +1,3 @@
+Top_by_Computation_Time
+node type,  start,  first,  avg_ms,  %,  cdf%,  mem KB,  times called,  name
+TfLiteXNNPackDelegate,  0.00453084,  0.096,  0.0812624,  100%,  100%,  0,  1,  [StatefulPartitionedCall:0]:3
